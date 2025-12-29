@@ -1,0 +1,54 @@
+### 1. **Set up Python environment**
+
+Make sure you have **Python 3.x** installed.
+You can create a virtual environment (optional but recommended):
+
+```bash
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+```
+
+---
+
+### 2. **Install dependencies**
+
+The main dependency is **OpenCV**. Install it with:
+
+```bash
+pip install opencv-python
+```
+
+(If you face errors, you may also need `numpy`, but OpenCV usually brings it in automatically.)
+
+---
+
+### 3. **Check assets**
+
+Inside the repo there’s an `assets/` folder with a sample video:
+`assets/debris.mp4`
+
+This is the input video that the script processes.
+
+---
+
+### 4. **Run the detection script**
+
+Run the Python script provided:
+
+```bash
+python spaceDebrisDetection.py
+```
+
+---
+
+### 5. **View results**
+
+* A window will open showing the video with **detected debris marked in bounding boxes**.
+* Press **q** to quit.
+
+---
+
+✅ That’s it — you’ll see simulated debris being detected in real-time from the video.
+
+Do you want me to also write a **requirements.txt** file for this repo\*\* (so you can just do `pip install -r requirements.txt`)?
