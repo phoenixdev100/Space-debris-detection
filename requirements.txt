@@ -1,0 +1,15 @@
+# Core Dependencies
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Data Visualization
+matplotlib>=3.7.0
+
+# Deep Learning (Optional - for YOLOv8 support)
+# Uncomment the following lines if you want to use real YOLOv8 models
+# ultralytics>=8.0.0
+# torch>=2.0.0
+# torchvision>=0.15.0
+
+# Additional Utilities
+Pillow>=10.0.0
