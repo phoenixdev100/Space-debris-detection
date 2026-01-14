@@ -1,0 +1,64 @@
+Here’s a **short, point-wise explanation** of what this Python code does 
+
+---
+
+### 🛰 Space Debris Detection (Video Processing using OpenCV)
+
+1. **Import Libraries**
+
+   * `cv2` for computer vision (OpenCV).
+   * `numpy` for matrix and array operations.
+
+2. **Set Color Boundaries**
+
+   * Defines a range of colors (from black to red) to detect **non-black (debris) areas** in the video frame.
+
+3. **Load Video**
+
+   * Opens a video file named `debris.mp4` located in the `./assets/` folder.
+
+4. **Define Kernels**
+
+   * Two kernel matrices (`5x5` and `20x20`) are used for **morphological filtering** (noise removal and object enhancement).
+
+5. **Frame-by-Frame Processing**
+
+   * Reads each frame from the video and **resizes** it for better visibility.
+
+6. **Color Conversion**
+
+   * Converts the frame from **BGR to HSV** color space for better color segmentation.
+
+7. **Mask Creation**
+
+   * Creates a binary mask that highlights pixels within the defined color range (potential debris).
+
+8. **Noise Reduction**
+
+   * Applies **morphological open and close operations** to clean up the mask and reduce noise.
+
+9. **Contour Detection**
+
+   * Finds **contours (boundaries)** of detected debris in the cleaned mask.
+
+10. **Object Marking**
+
+    * Draws **blue contours** and **red rectangles** around each detected debris.
+    * Adds **yellow labels** (numbers) to each debris object.
+
+11. **Display Output**
+
+    * Shows the processed video frame with detected debris highlighted in a window titled *“Space debris detection output”*.
+
+12. **Exit Condition**
+
+    * The video keeps playing until the user presses the **‘q’ key**.
+
+13. **Cleanup**
+
+    * Releases the video object and closes all OpenCV windows.
+
+---
+
+In short:
+The code detects and highlights **space debris (non-black moving objects)** in a video using **color filtering, morphological operations, and contour detection** in OpenCV.
