@@ -1,0 +1,17 @@
+The project is a Python/OpenCV-based video processing script that detects and highlights objects against a dark background (i.e., simulating space debris detection):
+
+It reads a video file (assets/debris.mp4) frame by frame.
+
+Converts frames to HSV color space and isolates bright (non-black) pixels using color thresholds.
+
+Applies morphological operations (opening and closing) to clean up the mask.
+
+Detects contours representing potential “debris,” draws bounding boxes around them, and labels each with a number.
+
+Finally, it displays the processed video until the user quits (by pressing q) 
+GitHub
+.
+
+TL;DR
+
+A simple demo using color-based masking and contour detection in OpenCV to visually identify and mark moving bright objects (simulated debris) against a dark background in a video.
